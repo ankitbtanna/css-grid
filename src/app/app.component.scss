@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  flex: 1;
+  border: 2px solid red;
+}
+
+.download-history-container {
+  border: 2px solid green;
+  width: 100%;
+
+  display: grid;
+  gap: 0;
+  grid-template-columns: 300px minmax(0, auto);
+  grid-template-rows: 50px minmax(0, auto);
+  grid-template-areas: 'header' 'facet' 'history';
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.header {
+  border: 2px solid yellow;
+}
+
+.facet {
+  border: 2px solid blue;
+}
+
+.history {
+  border: 2px solid purple;
+}
+
+@media (min-width: 10px) {
+  .download-history-container {
+    grid-template-areas: 'header header' 'facet history';
+  }
+}

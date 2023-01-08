@@ -8,10 +8,15 @@ body {
 
   display: flex;
   flex: 1;
+
+  font-size: 10px;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  outline: 1px solid red !important;
+  background: rgba($color: #25ff29, $alpha: 0.2) !important;
 }

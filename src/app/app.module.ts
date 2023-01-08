@@ -1,12 +1,12 @@
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { GridLayout3Component } from './grid-layout3/grid-layout3.component';
 import { NgModule } from '@angular/core';
-import { GridLayout2Component } from './grid-layout2/grid-layout2.component';
 
 @NgModule({
-  declarations: [AppComponent, GridLayout2Component],
+  declarations: [AppComponent, GridLayout3Component],
   imports: [BrowserModule],
   providers: [],
-  bootstrap: [GridLayout2Component],
+  bootstrap: [GridLayout3Component],
 })
 export class AppModule {}
